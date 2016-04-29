@@ -1,0 +1,106 @@
+#blok1{
+	width: 259px;
+	height: 194px;
+	position: fixed;
+	left: 30%;
+	top: 20%;
+}
+
+#blok2{
+	height: 2000px;
+}
+
+#donald{
+	width: 100%
+	height: auto;
+}
+
+#opis{
+	position: absolute;
+	left: 2px;
+	top: 0px;
+	color: white;
+}
+
+#opis2{
+	position: absolute;
+	left: 2px;
+	bottom: 0px;
+	color: white;
+}
+
+#opis3{
+	position: absolute;
+	right: 2px;
+	top: 0px;
+	color: white;
+}
+
+#opis4{
+	position: absolute;
+	right: 2px;
+	bottom: 0px;
+	color: white;
+}
+
+#opis5{
+	position: absolute;
+	left: 40%;
+	top: 40%;
+	color: white;
+}
+
+#menu{
+	position: fixed;
+	left: 10px;
+	top: 10px;
+	text-align: right;
+	width: 100%;
+	background-image: url("671c281b.png");
+}
+
+#przycisk{
+	position: fixed;
+	left: 50px;
+	top: 25px;
+	text-align: right;
+}
+
+#przycisk2{
+	position: fixed;
+	left: 150px;
+	top: 25px;
+	text-align: right;
+}
+
+#p_imie{
+	color: white;
+	position: fixed;
+	top: 100px;
+}
+
+#blok4{
+	color: white;
+	position: fixed;
+	top: 70px;
+}
+
+#blok3{
+	color: white;
+	position: fixed;
+	top: 100px;
+}
+
+ul{
+	padding-right: 25px;
+}
+
+li{
+	display: inline;
+	padding-right: 5px;
+}
+
+
+body{
+	background-image: url("3032_c.jpg");
+}
