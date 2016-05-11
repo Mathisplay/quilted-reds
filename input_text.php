@@ -7,11 +7,11 @@ $correct="abc";
 echo $correct; ?>
 
 <script>
-   function back(){alert("wow")};
-	<?php if(strcmp($text, $correct)=="0") ?>
-	{
-		back();
-	} 
+<?php function back(){echo "wow";};
+if(strcmp($text, $correct)=="0")
+{
+	back();
+}?>
 </script>
 
 </body>
