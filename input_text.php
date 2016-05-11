@@ -6,7 +6,9 @@ echo $text;?>
 
 <script>
    function back(){alert("wow")};
-	<?php if($text=="1234") ?>
+	<?php 
+	$correct="1234";
+	if($text==$correct) ?>
 	{
 		back();
 	}
