@@ -14,7 +14,7 @@ echo $correct;
 $isgood = strcmp($text, $correct);
 echo $isgood;
 if($isgood == 0):
-good;
+echo "good";
 endif;
 
 ?>
