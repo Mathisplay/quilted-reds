@@ -8,6 +8,7 @@ echo $correct; ?>
 
 <script>
 <?php function back(){echo "wow";};
+back();
 if(strcmp($text, $correct)=="0")
 {
 	back();
