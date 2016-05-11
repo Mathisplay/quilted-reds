@@ -5,7 +5,7 @@
     <title>CHECK</title>
     <link href="main2.css" rel="stylesheet" type="text/css">
 </head>
-<body bgcolor="#000000">
+<body bgcolor="black">
 
 <script>
     function back(){alert("wow")};
