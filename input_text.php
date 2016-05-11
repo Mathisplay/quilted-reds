@@ -10,7 +10,7 @@ echo strcmp($text, $correct);?>
 <script>
 function back(){alert("wow")};
 back();
-if(strcmp($text, $correct)=="0")
+if(strcmp($text, $correct)==="0")
 {
 	back();
 }
