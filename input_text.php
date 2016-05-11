@@ -5,7 +5,7 @@ Your password is: <?php echo $_GET["pass"]; ?>
 
 <script>
     function back(){alert("wow")};
-	<?php  $text = $_GET["pass"]; 
+	<?php  $text = strval($_GET["pass"]); 
 	echo $text; ?>
 	<?php if($text=="1234") ?>
 	{
