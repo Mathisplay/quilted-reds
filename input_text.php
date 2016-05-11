@@ -8,7 +8,7 @@ echo $correct; ?>
 
 <script>
    function back(){alert("wow")};
-	<?php if($text==$correct) ?>
+	<?php if(strcmp($text, $correct)==0) ?>
 	{
 		back();
 	} 
