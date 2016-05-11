@@ -1,4 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CHECK</title>
+    <link href="main2.css" rel="stylesheet" type="text/css">
+</head>
 <body>
 
 Your password is: <?php $text = $_GET["pass"];
