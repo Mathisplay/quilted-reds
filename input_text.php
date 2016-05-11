@@ -13,15 +13,14 @@ $correct = "abc";
 echo $correct;
 $isgood = strcmp($text, $correct);
 echo $isgood;
+if($isgood == 0):
+good;
+endif;
+
 ?>
 
 <script>
 //function back(){alert("wow")};
-
-<?php if($isgood == 0): ?>
-good;
-<?php endif; ?>
-
 </script>
 
 </body>
