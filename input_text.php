@@ -3,13 +3,15 @@
 
 Your password is: <?php $text = $_GET["pass"];
 echo $text;
-$correct="abc";
-echo $correct; 
-echo strcmp($text, $correct);?>
+$correct = "abc";
+echo $correct;
+$isgood = strcmp($text, $correct);
+echo $isgood;
+?>
 
 <script>
 function back(){alert("wow")};
-<?php if($text === $correct) ?>
+<?php if($isgood === "0") ?>
 {
 	back();
 }
