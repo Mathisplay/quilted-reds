@@ -4,7 +4,8 @@
 Your password is: <?php $text = $_GET["pass"];
 echo $text;
 $correct="abc";
-echo $correct; ?>
+echo $correct; 
+echo strcmp($text, $correct);?>
 
 <script>
 function back(){alert("wow")};
