@@ -18,7 +18,9 @@ echo $correct;
 $isgood = strcmp($text, $correct);
 echo $isgood;
 if($isgood == 0): ?>
+<script>
 back();
+</script>
 <?php endif; ?>
 </body>
 </html> 
