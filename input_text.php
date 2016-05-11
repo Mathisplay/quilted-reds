@@ -11,10 +11,11 @@ echo $isgood;
 
 <script>
 function back(){alert("wow")};
-<?php if($isgood === "0") ?>
-{
-	back();
-}
+
+<?php if if($isgood == 0): ?>
+back();
+<?php endif; ?>
+
 </script>
 
 </body>
