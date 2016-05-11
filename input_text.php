@@ -2,7 +2,7 @@
 <body>
 
 Your password is: <?php echo $_GET["pass"]; ?>
-if(<?php $_GET["pass"]=="1234" ?>)
+<?php if($_GET["pass"]=="1234" )?>
 {
 	back();
 }
