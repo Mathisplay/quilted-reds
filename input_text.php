@@ -12,9 +12,9 @@ echo $isgood;
 <script>
 function back(){alert("wow")};
 
-<?php if if($isgood == 0): ?>
+<?php if($isgood == 0){ ?>
 back();
-<?php endif; ?>
+<?php }; ?>
 
 </script>
 
