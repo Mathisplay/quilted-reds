@@ -10,7 +10,7 @@ echo $isgood;
 ?>
 
 <script>
-function back(){alert("wow")};
+//function back(){alert("wow")};
 
 <?php if($isgood == 0): ?>
 good;
