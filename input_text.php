@@ -9,8 +9,7 @@ echo strcmp($text, $correct);?>
 
 <script>
 function back(){alert("wow")};
-back();
-if(strcmp($text, $correct)==="0")
+<?php if(strcmp($text, $correct)==="0") ?>
 {
 	back();
 }
