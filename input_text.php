@@ -13,7 +13,7 @@ echo $isgood;
 function back(){alert("wow")};
 
 <?php if($isgood == 0): ?>
-back();
+good;
 <?php endif; ?>
 
 </script>
