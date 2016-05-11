@@ -5,12 +5,12 @@ Your password is: <?php echo $_GET["pass"]; ?>
 
 <script>
     function back(){alert("wow")};
-	<?php  $text = $_GET["pass"] ?>
+	<?php  $text = $_GET["pass"] 
 	alert(text)
-	<?php if(text=="1234")?>
+	if($text=="1234")
 	{
 		back();
-	}
+	}?>
 </script>
 
 </body>
