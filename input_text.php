@@ -19,7 +19,7 @@ if($isgood == 0): ?>
 <script>
 back();
 </script>
-<?php elseif; ?>
+<?php else: ?>
 <p style="color:white;">WRONG PASSWORD</p>
 <?php endif; ?>
 </body>
