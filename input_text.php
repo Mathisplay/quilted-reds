@@ -5,22 +5,22 @@
     <title>CHECK</title>
     <link href="main2.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body bgcolor="#000000">
 
 <script>
     function back(){alert("wow")};
 </script>
 
-Your password is: <?php $text = $_GET["pass"];
-echo $text;
+<?php $text = $_GET["pass"];
 $correct = "abc";
-echo $correct;
 $isgood = strcmp($text, $correct);
 echo $isgood;
 if($isgood == 0): ?>
 <script>
 back();
 </script>
+<?php elseif; ?>
+<p style="color:white;">WRONG PASSWORD</p>
 <?php endif; ?>
 </body>
 </html> 
