@@ -3,7 +3,8 @@
 
 Your password is: <?php $text = $_GET["pass"];
 echo $text;
-$correct="1234"; ?>
+$correct="abc";
+echo $correct; ?>
 
 <script>
    function back(){alert("wow")};
