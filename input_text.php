@@ -1,16 +1,18 @@
 <html>
 <body>
 
-Your password is: <?php echo $_GET["pass"]; ?>
+Your password is: <?php $text = $_GET["pass"];
+echo $text;?>
 
 <script>
-    function back(){alert("wow")};
+   <!--function back(){alert("wow")};
 	<?php $text = strval($_GET["pass"]); 
 	echo $text; ?>
 	<?php if($text=="1234") ?>
 	{
 		back();
 	}
+	-->
 </script>
 
 </body>
