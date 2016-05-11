@@ -4,8 +4,9 @@
 Your password is: <?php echo $_GET["pass"]; ?>
 
 <script>
-    function back(){alert("wow")};
-	<?php if($_GET["pass"]=="1234" )?>
+    function back(){location.href="#main"};
+	var text = <?php $_GET["pass"]; ?>
+	<?php if(text=="1234" )?>
 	{
 		back();
 	}
