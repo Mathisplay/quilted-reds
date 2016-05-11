@@ -2,6 +2,7 @@
 <body>
 
 Your password is: <?php $text = $_GET["pass"];
+echo $text;
 echo $text;?>
 
 <script>
