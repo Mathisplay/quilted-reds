@@ -8,10 +8,10 @@ echo $correct; ?>
 
 <script>
    function back(){alert("wow")};
-	<?php if($text==$correct) 
+	<?php if($text==$correct) ?>
 	{
 		back();
-	} ?>
+	} 
 </script>
 
 </body>
