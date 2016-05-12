@@ -9,13 +9,13 @@
     <div id="menu">
 		<ul>
 			<img src="quiltedRedsGif3.gif" id="logo">
-			<li><a href="zwei.html">Home</a></li>
+			<li><a href="home.html">Home</a></li>
 		</ul>
 	</div>
 
 <script>
     function back(){window.location.href = "gameStart.html";};
-    function back1(){window.location.href = "next.html";};
+    function back1(){window.location.href = "zwei.html";};
 </script>
 
 <?php $text = $_GET["pass"];
