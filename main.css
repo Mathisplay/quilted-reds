@@ -25,6 +25,14 @@
 	color: black;
 }
 
+#content{
+	position: absolute;
+	left: 3%;
+	top: 70px;
+	text-align: right;
+	width: 94%;
+}
+
 ul{
 	padding-right: 25px;
 }
