@@ -9,7 +9,7 @@
     <div id="menu">
 		<ul>
 			<img src="quiltedRedsGif3.gif" id="logo">
-			<li><a href="home.html">Home</a></li>
+			<li><a href="zwei.html">Home</a></li>
 		</ul>
 	</div>
 
