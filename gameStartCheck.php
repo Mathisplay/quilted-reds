@@ -8,8 +8,8 @@
 <body bgcolor="black">
 
 <script>
-    function back(){window.location.href = "input_test.html";};
-    function back1(){alert("wow")};
+    function back(){window.location.href = "gameStart.html";};
+    function back1(){alert("Tu będzie coś dalej.")};
 </script>
 
 <?php $text = $_GET["pass"];
