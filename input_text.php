@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>CHECK</title>
-    <link href="main2.css" rel="stylesheet" type="text/css">
+    <link href="main.css" rel="stylesheet" type="text/css">
 </head>
 <body bgcolor="black">
 
