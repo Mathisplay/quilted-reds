@@ -15,6 +15,7 @@
 <?php $text = $_GET["pass"];
 $correct = "abc";
 $isgood = strcmp($text, $correct);
+
 if($isgood == 0): ?>
 <script>
 back1();
