@@ -7,4 +7,6 @@ Instruction:
 gameStart ROT13
 gameStartCheck
 questionOne AtBash
-QuestionOneCheck
+questionOneCheck
+zwei Base64
+zweiCheck
