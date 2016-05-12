@@ -31,6 +31,9 @@
 	top: 70px;
 	text-align: center;
 	width: 94%;
+	margin: 0;
+    	margin-right: -50%;
+    	transform: translate(-50%, -50%)
 }
 
 ul{
