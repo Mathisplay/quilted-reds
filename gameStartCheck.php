@@ -5,7 +5,13 @@
     <title>CHECK</title>
     <link href="main.css" rel="stylesheet" type="text/css">
 </head>
-<body bgcolor="black">
+<body>
+    <div id="menu">
+		<ul>
+			<img src="quiltedRedsGif3.gif" id="logo">
+			<li><a href="gameStart.html">Game</a></li>
+		</ul>
+	</div>
 
 <script>
     function back(){window.location.href = "gameStart.html";};
