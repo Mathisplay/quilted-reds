@@ -21,7 +21,7 @@ back1();
 </script>
 
 <?php else: ?>
-<p style="color:white;" align="center">WRONG PASSWORD</p>
+<p id="notCorrect">WRONG PASSWORD</p>
 <script>
     setTimeout("back()", 2000);
 </script>
