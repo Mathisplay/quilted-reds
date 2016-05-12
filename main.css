@@ -1,6 +1,6 @@
 #menu{
 	position: fixed;
-	text-align: right;
+	text-align: center;
 	width: 100%;
 	background-image: url("d4cddc1c.png");
 }
@@ -13,7 +13,7 @@
 }
 
 ul{
-	<!--padding-right: 25px;-->
+	padding-right: 25px;
 }
 
 li{
