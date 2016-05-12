@@ -20,7 +20,7 @@ back();
 </script>
 <?php else: ?>
 <p style="color:white;">WRONG PASSWORD</p>
-<script language="javascript">
+<script>
     function back(){window.location.href = "input_test.html";};
     setTimeout("back()", 3000);
 </script>
