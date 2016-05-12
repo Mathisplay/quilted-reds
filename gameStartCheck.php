@@ -27,7 +27,7 @@ back1();
 </script>
 
 <?php else: ?>
-<div id="absolute">
+<div id="content">
 <p id="notCorrect">WRONG PASSWORD</p>
 </div>
 <script>
