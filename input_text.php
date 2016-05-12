@@ -21,6 +21,9 @@ back();
 </script>
 <?php else: ?>
 <p style="color:white;">WRONG PASSWORD</p>
+<script language="javascript">
+    window.location.href = "input_test.html";
+</script>
 <?php endif; ?>
 </body>
 </html> 
