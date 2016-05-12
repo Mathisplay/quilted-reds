@@ -59,6 +59,12 @@
 	background-image: url("671c281b.png");
 }
 
+#notCorrect{
+	position: fixed;
+	top: 50px;
+	text-align: center;
+}
+
 #przycisk{
 	position: fixed;
 	left: 50px;
