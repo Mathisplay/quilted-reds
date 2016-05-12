@@ -9,7 +9,6 @@
     <div id="menu">
 		<ul>
 			<img src="quiltedRedsGif3.gif" id="logo">
-			<li><a href="gameStart.html">Game</a></li>
 		</ul>
 	</div>
 
@@ -28,7 +27,9 @@ back1();
 </script>
 
 <?php else: ?>
+<div id="menu">
 <p id="notCorrect">WRONG PASSWORD</p>
+</div>
 <script>
     setTimeout("back()", 2000);
 </script>
