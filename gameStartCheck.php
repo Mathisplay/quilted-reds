@@ -19,7 +19,7 @@
 </script>
 
 <?php $text = $_GET["pass"];
-$correct = "abc";
+$correct = "hello world";
 $isgood = strcmp($text, $correct);
 
 if($isgood == 0): ?>
