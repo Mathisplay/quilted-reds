@@ -22,7 +22,7 @@ back();
 <p style="color:white;">WRONG PASSWORD</p>
 <script>
     function back(){window.location.href = "input_test.html";};
-    setTimeout("back()", 3000);
+    setTimeout("back()", 2000);
 </script>
 <?php endif; ?>
 </body>
