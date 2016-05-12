@@ -21,8 +21,8 @@ back();
 <?php else: ?>
 <p style="color:white;">WRONG PASSWORD</p>
 <script language="javascript">
-    setTimeout("load()", 5000);
-    window.location.href = "input_test.html";
+    function back(){window.location.href = "input_test.html";};
+    setTimeout("back()", 3000);
 </script>
 <?php endif; ?>
 </body>
