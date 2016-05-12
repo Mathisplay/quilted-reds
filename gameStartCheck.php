@@ -15,7 +15,7 @@
 
 <script>
     function back(){window.location.href = "gameStart.html";};
-    function back1(){alert("Tu będzie coś dalej.")};
+    function back1(){window.location.href = "questionOne.html";};
 </script>
 
 <?php $text = $_GET["pass"];
