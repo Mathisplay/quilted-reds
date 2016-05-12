@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Moja strona</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="menu">
+		<ul>
+			<img src="quiltedRedsGif3.gif" id="logo">
+			<li><a href="home.html">Home</a></li>
+		</ul>
+	</div>
+	
+<form action="questionOneCheck.php" method="get">
+	<div id="content"><br><br><br><br>Dsrxs zmrnzo rh pmldm zh nzm yvhg uirvmw?<br><br>
+		Password: <input type="text" name="pass"><br><br>
+	<input type="submit" value="Submit">
+	</div>
+</form>
+</body>
+</html>
