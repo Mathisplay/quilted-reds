@@ -8,7 +8,8 @@
 <body bgcolor="black">
 
 <script>
-    function back(){alert("wow")};
+    function back(){window.location.href = "input_test.html";};
+    function back1(){alert("wow")};
 </script>
 
 <?php $text = $_GET["pass"];
@@ -16,14 +17,15 @@ $correct = "abc";
 $isgood = strcmp($text, $correct);
 if($isgood == 0): ?>
 <script>
-back();
+back1();
 </script>
+
 <?php else: ?>
-<p style="color:white;">WRONG PASSWORD</p>
+<p style="color:white;" align="center">WRONG PASSWORD</p>
 <script>
-    function back(){window.location.href = "input_test.html";};
     setTimeout("back()", 2000);
 </script>
+
 <?php endif; ?>
 </body>
 </html> 
