@@ -27,11 +27,8 @@
 
 #content{
 	position: absolute;
-	left: 3%;
 	top: 70px;
 	text-align: center;
-	width: 94%;
-    	transform: translate(-50%, -50%);
 }
 
 ul{
