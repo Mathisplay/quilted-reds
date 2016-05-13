@@ -16,7 +16,9 @@
 			<li><a href="#">Text</a></li>
 		</ul>
 	</div>
-<canvas id="mojCanvas" width="1440" height="900"></canvas>
+	
+<canvas id="mojCanvas" width="1024" height="768"></canvas>
+
 <script>
     var c = document.getElementById("mojCanvas");
     var ctx = c.getContext("2d");
@@ -28,12 +30,12 @@
 	//var c = -1.25;
 	//var d = -1.47;
 	
-	var a = -1.45;
-	var b = 1.89;
-	var c = -1.87;
-	var d = 1.86;
+	var a = 1.88;
+	var b = -1.7;
+	var c = 0.43;
+	var d = -0.78;
 	
-	var skala = 100;
+	var skala = 140;
 	
 	//var timer = setInterval(dejong, 10);
 	
@@ -64,7 +66,7 @@
 				ctx.fillStyle = "rgba(255, 255, 0, 0.1)";
 			if(i%6 == 5)
 				ctx.fillStyle = "rgba(0, 255, 255, 0.1)";
-			ctx.fillRect(xn * skala + 1440/2, yn * skala + 900/2, 1, 1);
+			ctx.fillRect(xn * skala + 1024/2, yn * skala + 768/2, 1, 1);
 			
 			x = xn;
 			y = yn;
@@ -90,7 +92,7 @@
 				ctx.fillStyle = "rgba(255, 255, 0, 0.1)";
 			if(i%6 == 5)
 				ctx.fillStyle = "rgba(0, 255, 255, 0.1)";
-			ctx.fillRect(xn * skala + 1440/2, yn * skala + 900/2, 1, 1);
+			ctx.fillRect(xn * skala + 1024/2, yn * skala + 768/2, 1, 1);
 			
 			x = xn;
 			y = yn;
@@ -104,7 +106,6 @@
 	}
 	
 </script>
-
 
 </body>
 </html>
