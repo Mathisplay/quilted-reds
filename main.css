@@ -1,12 +1,12 @@
 #logo{
-	position: fixed;
+	position: absolute;
 	left: 4%;
 	top: 11px;
 	text-align: left;
 }
 
 #menu{
-	position: fixed;
+	position: absolute;
 	left: 3%;
 	top: 10px;
 	text-align: right;
@@ -16,7 +16,7 @@
 }
 
 #notCorrect{
-	position: fixed;
+	position: absolute;
 	top: 100px;
 	left: 3%;
 	width: 94%;
