@@ -30,9 +30,9 @@
 	//var c = -1.25;
 	//var d = -1.47;
 	
-	var a = 1.88;
+	var a = 1.87;
 	var b = -1.74;
-	var c = -0.43;
+	var c = 0.43;
 	var d = -0.78;
 	
 	var skala = 160;
@@ -46,7 +46,7 @@
 	
 	function dejong()
 	{
-		for(var i=0; i<1000; i++)
+		for(var i=0; i<100; i++)
 		{
 			//var xn = y + 1 - a * x * x;
 			//var yn = b * x;
@@ -75,7 +75,7 @@
 	
 	function clifford()
 	{
-		for(var i=0; i<1000; i++)
+		for(var i=0; i<100; i++)
 		{
 			var xn = Math.sin(a*y) - Math.cos(a*x);
 			var yn = Math.sin(b*x) - Math.cos(b*y);
