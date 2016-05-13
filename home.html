@@ -17,6 +17,17 @@
 		</ul>
 	</div>
 	
+	<div id="content">
+	<form action="home.html" method="get">
+		<li>a: <input type="text" name="aParameter"></li>
+		<li>b: <input type="text" name="bParameter"></li>
+		<li>c: <input type="text" name="cParameter"></li>
+		<li>d: <input type="text" name="dParameter"></li>
+		<li> <input type="submit" value="OK"></li>
+	<input type="submit" value="Submit">
+	</form>
+	</div>
+	
 <canvas id="mojCanvas" width="1224" height="768"></canvas>
 
 <script>
@@ -35,10 +46,10 @@
 	//var c = 1.76;
 	//var d = -1.28;
 	
-	var a = -1.87;
-	var b = -1.74;
-	var c = 1.76;
-	var d = -1.28;
+	var a = <?php $_GET["aParameter"]; ?>
+	var b = <?php $_GET["bParameter"]; ?>
+	var c = <?php $_GET["cParameter"]; ?>
+	var d = <?php $_GET["dParameter"]; ?>
 	
 	var skala = 160;
 	
