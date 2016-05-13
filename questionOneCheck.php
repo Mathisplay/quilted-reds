@@ -14,7 +14,7 @@
 	</div>
 
 <script>
-    function back(){window.location.href = "gameStart.html";};
+    function back(){window.location.href = "questionOne.html";};
     function back1(){window.location.href = "zwei.html";};
 </script>
 
