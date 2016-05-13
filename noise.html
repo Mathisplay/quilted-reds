@@ -17,7 +17,7 @@
 		</ul>
 	</div>
 
-<canvas id="Canvas" width="1224" height="768"></canvas>
+<canvas id="Canvas" width="1224" height="798"></canvas>
 
 <script>
 	function gup( name, url ) {
@@ -42,7 +42,7 @@
 		for(var i=0; i<5000; i++)
 		{
 		x = Math.floor(Math.random() * 1224);
-		y = Math.floor(Math.random() * 768);
+		y = Math.floor(Math.random() * 798);
 			
 		if(i%6 == 0)
 			ctx.fillStyle = "rgba(255, 0, 0, 0.5)";
@@ -56,7 +56,7 @@
 			ctx.fillStyle = "rgba(255, 255, 0, 0.5)";
 		if(i%6 == 5)
 			ctx.fillStyle = "rgba(0, 255, 255, 0.5)";
-		ctx.fillRect(x, y+30, 2, 2);
+		ctx.fillRect(x, y, 2, 2);
 		}
 	}
 
