@@ -42,8 +42,7 @@
 	text-align: center;
 	left: 3%;
 	width: 94%;
-	font-family: "Lucida Console", Monaco, monospace;
-	font-size: 24px;
+	z-index: -1;
 }
 
 ul{
