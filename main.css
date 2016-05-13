@@ -12,6 +12,7 @@
 	text-align: right;
 	width: 94%;
 	background-image: url("d4cddc1c.png");
+	z-index: -1;
 }
 
 #notCorrect{
