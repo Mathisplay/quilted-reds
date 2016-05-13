@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Noise</title>
+	<link href="main.css" rel="stylesheet" type="text/css">
+	<script src="jquery-2.2.3.min.js"></script>
+</head>
+<body>
+	<div id="menu">
+		<ul>
+			<img src="quiltedRedsGif3.gif" id="logo">
+			<li><a href="home.html">Home</a></li>
+			<div id="content">
+			Noise Generator
+			</div>
+		</ul>
+	</div>
+
+<canvas id="Canvas" width="1224" height="768"></canvas>
+
+<script>
+	function gup( name, url ) {
+  	if (!url) url = location.href;
+  	name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+  	var regexS = "[\\?&]"+name+"=([^&#]*)";
+  	var regex = new RegExp( regexS );
+  	var results = regex.exec( url );
+	return results == null ? null : results[1];
+	}
+	
+	var c = document.getElementById("Canvas");
+	var ctx = c.getContext("2d");
+
+	var x = 0;
+	var y = 0;
+	
+	requestAnimationFrame(rysuj);
+	
+	function noise()
+	{
+		for(var i=0; i<2000; i++)
+		{
+		x = Math.floor(Math.random() * 1224);
+		y = Math.floor(Math.random() * 768);
+			
+		if(i%6 == 0)
+		    ctx.fillStyle = "rgba(255, 0, 0, 0.1)";
+		if(i%6 == 1)
+		    ctx.fillStyle = "rgba(0, 255, 0, 0.1)";
+		if(i%6 == 2)
+		    ctx.fillStyle = "rgba(0, 0, 255, 0.1)";
+		if(i%6 == 3)
+		    ctx.fillStyle = "rgba(255, 0, 255, 0.1)";
+		if(i%6 == 4)
+	      ctx.fillStyle = "rgba(255, 255, 0, 0.1)";
+		if(i%6 == 5)
+		    ctx.fillStyle = "rgba(0, 255, 255, 0.1)";
+		ctx.fillRect(x, y+30, 1, 1);
+		}
+	}
+
+	function rysuj()
+	{
+		requestAnimationFrame(rysuj);
+		noise();
+	}
+	
+</script>
+
+</body>
+</html>
