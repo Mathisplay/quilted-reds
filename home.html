@@ -30,9 +30,18 @@
 <canvas id="mojCanvas" width="1224" height="768"></canvas>
 
 <script>
-    var c = document.getElementById("mojCanvas");
-    var ctx = c.getContext("2d");
-    //ctx.fillStyle = "#FF106F";
+	function gup( name, url ) {
+  	if (!url) url = location.href;
+  	name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+  	var regexS = "[\\?&]"+name+"=([^&#]*)";
+  	var regex = new RegExp( regexS );
+  	var results = regex.exec( url );
+	return results == null ? null : results[1];
+	}
+
+	var c = document.getElementById("mojCanvas");
+	var ctx = c.getContext("2d");
+	//ctx.fillStyle = "#FF106F";
 	//ctx.fillRect(10, 15, 100, 200);
 	
 	//var a = -1.5;
@@ -45,10 +54,10 @@
 	//var c = 1.76;
 	//var d = -1.28;
 	
-	var a = document.getElementById('aParameter');
-	var b = document.getElementById('bParameter');
-	var c = document.getElementById('cParameter');
-	var d = document.getElementById('dParameter');
+	var a = gup('aParameter');
+	var b = gup('bParameter');
+	var c = gup('cParameter');
+	var d = gup('dParameter');
 	
 	var skala = 160;
 	
