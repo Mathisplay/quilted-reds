@@ -26,17 +26,19 @@
 		ctx.fillStyle = "rgba(0, 255, 60, 1)";
 		var x1, y1;
 		function randomPixels(){
-		for(var i = 0; i < 100; i++)
-			x1 = Math.floor(Math.random() * 499);
-			y1 = Math.floor(Math.random() * 499);
-			ctx.fillRect(x1, y1, 2, 2);
+			for(var i = 0; i < 100; i++){
+				x1 = Math.floor(Math.random() * 499);
+				y1 = Math.floor(Math.random() * 499);
+				ctx.fillRect(x1, y1, 2, 2);
+				if(i == 0)
+					ctx.clearRect(0, 0, canvas.width, canvas.height);
+			}
 		}
 		
 		requestAnimationFrame(rysuj);
 		function rysuj()
 		{
 		requestAnimationFrame(rysuj);
-		ctx.clearRect(0, 0, canvas.width, canvas.height);
 		randomPixels();
 		}
 		
