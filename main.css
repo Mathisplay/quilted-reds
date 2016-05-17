@@ -84,7 +84,7 @@
 	position: fixed;
 	text-align: right;
 	z-index: 10000000;
-	top: 0px;
+	bottom: 20px;
 	height: 20px;
 	width: 100%;
 	font-size: 14px;
