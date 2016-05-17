@@ -66,9 +66,9 @@
 	text-align: center;
 	z-index: -1;
 	top: 100px;
-	left: 50%;
-	//width: 140px;
-	//height: 200px;
+	width: 20%;
+	left: 70%;
+	height: 200px;
 }
 
 #face{
