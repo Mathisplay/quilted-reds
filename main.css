@@ -81,9 +81,9 @@
 }
 
 #footer{
-	position: relative;
+	position: fixed;
 	text-align: right;
-	z-index: 9999999;
+	z-index: 10000000;
 	top: 0px;
 	height: 20px;
 	width: 100%;
