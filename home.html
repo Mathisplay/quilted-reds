@@ -32,6 +32,8 @@
 				x1 = Math.floor(Math.random() * 499);
 				y1 = Math.floor(Math.random() * 499);
 				ctx.fillRect(x1, y1, 2, 2);
+				if(i == 0)
+				ctx.clearRect(0, 0, Canvas.width, Canvas.height);
 			}
 		}
 		
@@ -40,7 +42,6 @@
 		{
 		requestAnimationFrame(rysuj);
 		randomPixels();
-		ctx.clearRect(0, 0, Canvas.width, Canvas.height);
 		}
 		
 	</script>
