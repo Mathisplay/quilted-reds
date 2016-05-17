@@ -17,18 +17,9 @@
 		</ul>
 	</div>
 
-<canvas id="Canvas" width="1224" height="768"></canvas>
+<canvas id="Canvas" width="1223" height="768"></canvas>
 
 <script>
-	function gup( name, url ) {
-  	if (!url) url = location.href;
-  	name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
-  	var regexS = "[\\?&]"+name+"=([^&#]*)";
-  	var regex = new RegExp( regexS );
-  	var results = regex.exec( url );
-	return results == null ? null : results[1];
-	}
-	
 	var c = document.getElementById("Canvas");
 	var ctx = c.getContext("2d");
 
@@ -41,7 +32,7 @@
 	{
 		for(var i=0; i<5000; i++)
 		{
-		x = Math.floor(Math.random() * 1224);
+		x = Math.floor(Math.random() * 1223);
 		y = Math.floor(Math.random() * 768);
 			
 		if(i%6 == 0)
