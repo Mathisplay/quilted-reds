@@ -7,10 +7,10 @@
 
 #menu{
 	position: absolute;
-	left: 3%;
+	left: 2%;
 	top: 10px;
 	text-align: right;
-	width: 94%;
+	width: 96%;
 	background-image: url("d4cddc1c.png");
 	//z-index: 9999999;
 }
