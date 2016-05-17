@@ -59,6 +59,8 @@
 	position: absolute;
 	text-align: center;
 	z-index: -1;
+	left: 50%-34px;
+	top: 50%+64px;
 }
 
 #face{
