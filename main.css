@@ -74,8 +74,8 @@
 #face{
 	position: absolute;
 	text-align: center;
-	left: 50%;
-	top: 50%;
+	left: 34px;
+	top: 64px;
 	z-index: -1;
 }
 
