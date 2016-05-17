@@ -78,5 +78,8 @@ back1();
 		rysuj2();
 		
 	</script>
+	<div id="footer">
+		Site made by Mateusz Kamiński.
+	</div>
 </body>
 </html> 
