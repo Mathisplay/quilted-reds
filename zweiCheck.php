@@ -37,7 +37,7 @@ back1();
 <?php endif; ?>
 
 <div id="Canvas2Pos">
-		<img src="face2.png" id="face">
+		<img src="face.gif" id="face">
 		<canvas id="Canvas2" width="140" height="200"></canvas>
 	</div>
 	
