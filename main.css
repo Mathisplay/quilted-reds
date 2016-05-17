@@ -84,7 +84,7 @@
 	position: relative;
 	text-align: right;
 	z-index: 9999999;
-	top: 100%;
+	top: 0px;
 	height: 20px;
 	width: 100%;
 	font-size: 14px;
@@ -101,7 +101,6 @@ li{
 	display: inline;
 	padding-right: 5px;
 }
-
 
 body{
 	background-image: url("c09d36dc.png");
