@@ -55,6 +55,13 @@
 	z-index: -1;
 }
 
+#Canvas2{
+	position: absolute;
+	top: 50px;
+	text-align: center;
+	z-index: -1;
+}
+
 ul{
 	padding-right: 25px;
 }
