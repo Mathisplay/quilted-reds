@@ -95,7 +95,7 @@ body{
 	background-image: url("c09d36dc.png");
 }
 
-.button{
+submitButton{
     background-color: #4CAF50;
     border: none;
     color: black;
