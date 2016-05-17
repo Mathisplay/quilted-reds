@@ -59,8 +59,14 @@
 	position: relative;
 	text-align: center;
 	z-index: -1;
-	left: 70%;
-	top: 100px;
+}
+
+#Canvas2Pos{
+	position: relative;
+	text-align: center;
+	z-index: -1;
+	top: 20%;
+	right: 20%;
 }
 
 #face{
