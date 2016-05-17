@@ -18,12 +18,13 @@
 	</div>
 	
 	<canvas id="Canvas" width="500" height="500"></canvas>
+	<script>
 	var c = document.getElementById('Canvas');
 	gl = c.getContext("webgl");
 	gl.enable(gl.DEPTH_TEST);
 	gl.depthFunc(gl.LEQUAL);
 	gl.clearColor(0.0,0.0,0.0,1);
     	gl.clear(gl.COLOR_BUFFER_BIT);
-
+	</script>
 </body>
 </html>
