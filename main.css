@@ -61,6 +61,12 @@
 	z-index: -1;
 }
 
+#face{
+	position: absolute;
+	text-align: center;
+	z-index: -2;
+}
+
 ul{
 	padding-right: 25px;
 }
