@@ -37,12 +37,12 @@
 			}
 		}
 		
-		requestAnimationFrame(rysuj);
 		function rysuj()
 		{
-		requestAnimationFrame(rysuj);
-		randomPixels();
+			setTimeout(rysuj, 10);
+			randomPixels();
 		}
+		rysuj();
 		
 	</script>
 </body>
