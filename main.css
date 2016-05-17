@@ -87,6 +87,10 @@
 	bottom: 20px;
 	height: 20px;
 	width: 100%;
+	font-size: 14px;
+	font-family: "Lucida Console", Monaco, monospace;
+	background-image: url("d4cddc1c.png");
+	color: white;
 }
 
 ul{
