@@ -59,8 +59,8 @@
 	position: relative;
 	text-align: center;
 	z-index: -1;
-	left: 50%-34px;
-	top: 50%+64px;
+	left: 70%;
+	top: 30%;
 }
 
 #face{
@@ -68,7 +68,7 @@
 	text-align: center;
 	left: 50%;
 	top: 50%;
-	z-index: -2;
+	z-index: -1;
 }
 
 ul{
