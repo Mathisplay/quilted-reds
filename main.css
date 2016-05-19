@@ -125,3 +125,14 @@ body{
     display: inline-block;
     font-size: 24px;
 }
+
+.menuButton{
+    background-color: #FFC31E;
+    border-width: 2px;
+    border-color: black;
+    border-style: dashed;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 24px;
+}
