@@ -17,7 +17,6 @@
 
 #notCorrect{
 	position: absolute;
-	top: 100px;
 	left: 3%;
 	width: 94%;
 	text-align: center;
@@ -38,6 +37,15 @@
 	white-space: nowrap;
         overflow: hidden;
         text-overflow: clip;
+}
+
+#content3{
+	position: absolute;
+	top: 100px;
+	left: 25%;
+	width: 50%;
+	font-family: "Lucida Console", Monaco, monospace;
+	word-wrap: break-word;
 }
 
 #bottomBar{
