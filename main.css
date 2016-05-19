@@ -151,15 +151,15 @@ body{
 }
 
 .menuButton2{
-    background-color: #FFC31E;
-    border-width: 2px;
+    background-color: #0066ff;
+    border-width: 3px;
     border-color: black;
-    border-style: dashed;
+    border-style: double;
     color: black;
     text-align: center;
     display: inline-block;
     font-size: 36px;
     width: 40%;
-    width: 50%;
+    height: 50%;
     font-family: "Lucida Console", Monaco, monospace;
 }
