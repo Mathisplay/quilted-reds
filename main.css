@@ -95,6 +95,18 @@
 	padding-top: 4px;
 }
 
+#content2{
+	position: absolute;
+	top: 13px;
+	text-align: center;
+	left: 25%;
+	width: 50%;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 24px;
+	word-wrap: break-word;
+	padding-top: 30px;
+}
+
 ul{
 	padding-right: 25px;
 }
@@ -135,5 +147,17 @@ body{
     text-align: center;
     display: inline-block;
     font-size: 16px;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+.menuButton{
+    background-color: #FFC31E;
+    border-width: 2px;
+    border-color: black;
+    border-style: dashed;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    font-size: 36px;
     font-family: "Lucida Console", Monaco, monospace;
 }
