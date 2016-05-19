@@ -155,11 +155,14 @@ body{
     border-width: 3px;
     border-color: black;
     border-style: double;
-    color: black;
+    color: white;
     text-align: center;
     display: inline-block;
     font-size: 36px;
     width: 40%;
     height: 50%;
     font-family: "Lucida Console", Monaco, monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
 }
