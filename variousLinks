@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Links to Logic Games</title>
+	<link href="main.css" rel="stylesheet" type="text/css">
+	<script src="jquery-2.2.3.min.js"></script>
+</head>
+<body>
+	<div id="menu">
+		<ul>
+			<img src="quiltedRedsGif3.gif" id="logo">
+			<li><button class="menuButton" onclick="window.location.href='home.html'">Home</button></li>
+			<div id="content">
+			Links to Logic Games
+			</div>
+		</ul>
+	</div>
+	
+	<ul style="top:40px;">
+	<li id="content2" style="top:60px;"><button class="menuButton2" onclick="window.location.href='http://www.freetetris.org/index.html'">Tetris</button></li>
+	<li id="content2" style="top:120px;"><button class="menuButton2" onclick="window.location.href='http://www.connectfour.org/connect-4-online.php'">Connect 4</button></li>
+	<li id="content2" style="top:180px;"><button class="menuButton2" onclick="window.location.href='http://onlinesudoku.pl/'">Sudoku</button></li>
+	<li id="content2" style="top:240px;"><button class="menuButton2" onclick="window.location.href='http://www.freesimon.org/'">Simon Says</button></li>
+	<li id="content2" style="top:300px;"><button class="menuButton2" onclick="window.location.href='https://www.archimedes-lab.org/game_nim/play_nim_game.html'">Nim Game</button></li>
+	</ul>
+	
+	<div id="footer">
+		Site made by Mateusz Kamiński.
+	</div>
+
+</body>
+</html>
