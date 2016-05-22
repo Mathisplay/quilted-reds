@@ -189,7 +189,7 @@ body{
     font-size: 28px;
 }
 
-.matrixTable{
+#matrixTable{
 	font-family: "Lucida Console", Monaco, monospace;
 	color: white;
 	font-size: 14px;
@@ -199,4 +199,5 @@ body{
 	border-width: 1px;
 	overflow: hidden;
 	word-break: normal;
+	top: 20%;
 }
