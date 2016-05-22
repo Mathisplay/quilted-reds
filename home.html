@@ -19,11 +19,11 @@
 	
 	<div>
 	<ul>
-	<li id="content2" style="top:60px;"><button class="menuButton2" onclick="window.location.href='gameStart.html'">Riddle Quest</button></li>
-	<li id="content2" style="top:120px;"><button class="menuButton2" onclick="window.location.href='gameLinks.html'">Links to Logic Games</button></li>
-	<li id="content2" style="top:180px;"><button class="menuButton2" onclick="window.location.href='variousLinks.html'">Links to Other Riddles</button></li>
-	<li id="content2" style="top:240px;"><button class="menuButton2" onclick="window.location.href='attractor.html'">Attractor</button></li>
-	<li id="content2" style="top:300px;"><button class="menuButton2" onclick="window.location.href='noise.html'">Noise Generator</button></li>
+	<li id="content2" style="top:60px;"><button onmouseenter="hover=1" onmouseout="0" class="menuButton2" onclick="window.location.href='gameStart.html'">Riddle Quest</button></li>
+	<li id="content2" style="top:120px;"><button onmouseenter="hover=2" onmouseout="0" class="menuButton2" onclick="window.location.href='gameLinks.html'">Links to Logic Games</button></li>
+	<li id="content2" style="top:180px;"><button onmouseenter="hover=3" onmouseout="0" class="menuButton2" onclick="window.location.href='variousLinks.html'">Links to Other Riddles</button></li>
+	<li id="content2" style="top:240px;"><button onmouseenter="hover=4" onmouseout="0" class="menuButton2" onclick="window.location.href='attractor.html'">Attractor</button></li>
+	<li id="content2" style="top:300px;"><button onmouseenter="hover=5" onmouseout="0" class="menuButton2" onclick="window.location.href='noise.html'">Noise Generator</button></li>
 	</ul>
 	<canvas id="tablePos" width="500" height="500"></canvas>
 	</div>
@@ -37,6 +37,7 @@
 	var x = 0;
 	var y = 0;
 	var n;
+	var hover;
 	ctx.fillStyle = "rgba(255, 255, 255, 1)";
 	ctx.font = "30px Lucida Console";
 	function randomTab(){
@@ -47,13 +48,40 @@
 		while(x < 500){
 			n = Math.floor(Math.random() * 9);
 			x = x+30;
+			if(hover==0){
 			ctx.fillText(n,x,y);
+			}
+			if(hover==1){
+				if(x==30 && y==30)
+				ctx.fillText("R",x,y);
+				else if(x==60 && y==30)
+				ctx.fillText("i",x,y);
+				else if(x==90 && y==30)
+				ctx.fillText("d",x,y);
+				else if(x==120 && y==30)
+				ctx.fillText("d",x,y);
+				else if(x==150 && y==30)
+				ctx.fillText("l",x,y);
+				else if(x==180 && y==30)
+				ctx.fillText("e",x,y);
+			}
+			if(hover==2){
+			
+			}
+			if(hover==3){
+			
+			}
+			if(hover==4){
+			
+			}
+			if(hover==5){
+			
+			}
 		}
 		x = 0;
 	}
 	y = 0;
 	}
-	
 	function tab()
 		{
 			setTimeout(tab, 200);
