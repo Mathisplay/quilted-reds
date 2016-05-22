@@ -189,12 +189,7 @@ body{
     font-size: 28px;
 }
 
-.tg{
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-th{
+#matrixTable{
 	font-family: "Lucida Console", Monaco, monospace;
 	color: white;
 	font-size: 14px;
@@ -204,10 +199,4 @@ th{
 	border-width: 1px;
 	overflow: hidden;
 	word-break: normal;
-}
-
-.tg-yw4l{
-	vertical-align: center;
-	top: 20%;
-	color: white;
 }
