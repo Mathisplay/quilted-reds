@@ -194,7 +194,7 @@ body{
 	border-spacing: 0;
 }
 
-.tg td{
+td{
 	font-family: Arial, sans-serif;
 	color: white;
 	font-size: 14px;
@@ -205,7 +205,7 @@ body{
 	word-break: normal;
 }
 
-.tg th{
+th{
 	font-family: Arial, sans-serif;
 	color: white;
 	font-size: 14px;
@@ -217,7 +217,7 @@ body{
 	word-break: normal;
 }
 
-.tg .tg-yw4l{
+.tg-yw4l{
 	vertical-align: center;
 	top: 20%;
 }
