@@ -196,6 +196,7 @@ body{
 
 .tg td{
 	font-family: Arial, sans-serif;
+	color: white;
 	font-size: 14px;
 	padding: 10px 5px;
 	border-style: solid;
@@ -206,6 +207,7 @@ body{
 
 .tg th{
 	font-family: Arial, sans-serif;
+	color: white;
 	font-size: 14px;
 	font-weight: normal;
 	padding: 10px 5px;
