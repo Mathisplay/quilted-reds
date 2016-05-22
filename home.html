@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:20px;padding:10px 10px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:20px;font-weight:normal;padding:10px 10px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;}
-.tg .tg-ctfb{font-size:20px;font-family:"Lucida Console", Monaco, monospace;color:#ffffff;text-align:center;vertical-align:top}
-.tg .tg-yh3i{font-family:"Lucida Console", Monaco, monospace;color:#ffffff;vertical-align:top}
-</style>
 <head>
 	<meta charset="UTF-8">
 	<title>Quilted Reds Homepage</title>
@@ -42,7 +35,8 @@
 	var c = document.getElementById("tablePos");
 	var ctx = c.getContext("2d");
 	ctx.fillStyle = "rgba(255, 255, 255, 1)";
-	ctx.fillRect(200, 200, 3, 3);
+	ctx.font = "30px Lucida Console";
+	ctx.fillText("Hello World",10,50);
 	</script>
 </body>
 </html>
