@@ -39,6 +39,7 @@
 	var n;
 	ctx.fillStyle = "rgba(255, 255, 255, 1)";
 	ctx.font = "30px Lucida Console";
+	function randomTab(){
 	while(y < 450){
 		n = Math.floor(Math.random() * 9);
 		y = y+30;
@@ -49,6 +50,14 @@
 		}
 		x = 0;
 	}
+	y = 0;
+	}
+	
+	function tab()
+		{
+			setTimeout(tab, 200);
+			randomTab();
+		}
 	</script>
 </body>
 </html>
