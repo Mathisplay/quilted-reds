@@ -23,11 +23,223 @@
 	<li id="content2" style="top:180px;"><button class="menuButton2" onclick="window.location.href='http://onlinesudoku.pl/'">Sudoku</button></li>
 	<li id="content2" style="top:240px;"><button class="menuButton2" onclick="window.location.href='http://www.freesimon.org/'">Simon Says</button></li>
 	<li id="content2" style="top:300px;"><button class="menuButton2" onclick="window.location.href='https://www.archimedes-lab.org/game_nim/play_nim_game.html'">Nim Game</button></li>
+	<canvas id="tablePos" width="500" height="500"></canvas>
 	</ul>
 	
 	<div id="footer">
 		Site made by Mateusz Kamiński.
 	</div>
-
+	
+	<script>
+	var c = document.getElementById("tablePos");
+	var ctx = c.getContext("2d");
+	var x = 0;
+	var y = 0;
+	var n;
+	var hover = 0;
+	ctx.fillStyle = "rgba(200, 255, 200, 1)";
+	ctx.font = "30px Lucida Console";
+	function randomTab(){
+	ctx.clearRect(0, 0, c.width, c.height);
+	while(y < 450){
+		n = Math.floor(Math.random() * 9);
+		y = y+30;
+		while(x < 500){
+			n = Math.floor(Math.random() * 9);
+			x = x+30;
+			if(hover==0){
+			ctx.fillStyle = "rgba(0, 255, 0, 0.5)";
+			ctx.fillText(n,x,y);
+			}
+			if(hover==1){
+				ctx.fillStyle = "rgba(200, 255, 200, 1)";
+				if(x==60 && y==60)
+				ctx.fillText("R",x,y);
+				else if(x==90 && y==60)
+				ctx.fillText("i",x,y);
+				else if(x==120 && y==60)
+				ctx.fillText("d",x,y);
+				else if(x==150 && y==60)
+				ctx.fillText("d",x,y);
+				else if(x==180 && y==60)
+				ctx.fillText("l",x,y);
+				else if(x==210 && y==60)
+				ctx.fillText("e",x,y);
+				else if(x==180 && y==180)
+				ctx.fillText("Q",x,y);
+				else if(x==210 && y==180)
+				ctx.fillText("u",x,y);
+				else if(x==240 && y==180)
+				ctx.fillText("e",x,y);
+				else if(x==270 && y==180)
+				ctx.fillText("s",x,y);
+				else if(x==300 && y==180)
+				ctx.fillText("t",x,y);
+				else{
+				ctx.fillStyle = "rgba(0, 255, 0, 0.5)";
+				ctx.fillText(n,x,y);
+				}
+			}
+			if(hover==2){
+				ctx.fillStyle = "rgba(200, 255, 200, 1)";
+				if(x==180 && y==90)
+				ctx.fillText("L",x,y);
+				else if(x==210 && y==90)
+				ctx.fillText("i",x,y);
+				else if(x==240 && y==90)
+				ctx.fillText("n",x,y);
+				else if(x==270 && y==90)
+				ctx.fillText("k",x,y);
+				else if(x==300 && y==90)
+				ctx.fillText("s",x,y);
+				else if(x==300 && y==210)
+				ctx.fillText("t",x,y);
+				else if(x==330 && y==210)
+				ctx.fillText("o",x,y);
+				else if(x==60 && y==330)
+				ctx.fillText("L",x,y);
+				else if(x==90 && y==330)
+				ctx.fillText("o",x,y);
+				else if(x==120 && y==330)
+				ctx.fillText("g",x,y);
+				else if(x==150 && y==330)
+				ctx.fillText("i",x,y);
+				else if(x==180 && y==330)
+				ctx.fillText("c",x,y);
+				else if(x==330 && y==420)
+				ctx.fillText("G",x,y);
+				else if(x==360 && y==420)
+				ctx.fillText("a",x,y);
+				else if(x==390 && y==420)
+				ctx.fillText("m",x,y);
+				else if(x==420 && y==420)
+				ctx.fillText("e",x,y);
+				else if(x==450 && y==420)
+				ctx.fillText("s",x,y);
+				else{
+				ctx.fillStyle = "rgba(0, 255, 0, 0.5)";
+				ctx.fillText(n,x,y);
+				}
+			}
+			if(hover==3){
+				ctx.fillStyle = "rgba(200, 255, 200, 1)";
+				if(x==300 && y==120)
+				ctx.fillText("L",x,y);
+				else if(x==330 && y==120)
+				ctx.fillText("i",x,y);
+				else if(x==360 && y==120)
+				ctx.fillText("n",x,y);
+				else if(x==390 && y==120)
+				ctx.fillText("k",x,y);
+				else if(x==420 && y==120)
+				ctx.fillText("s",x,y);
+				else if(x==120 && y==240)
+				ctx.fillText("t",x,y);
+				else if(x==150 && y==240)
+				ctx.fillText("o",x,y);
+				else if(x==210 && y==300)
+				ctx.fillText("O",x,y);
+				else if(x==240 && y==300)
+				ctx.fillText("t",x,y);
+				else if(x==270 && y==300)
+				ctx.fillText("h",x,y);
+				else if(x==300 && y==300)
+				ctx.fillText("e",x,y);
+				else if(x==330 && y==300)
+				ctx.fillText("r",x,y);
+				else if(x==60 && y==360)
+				ctx.fillText("R",x,y);
+				else if(x==90 && y==360)
+				ctx.fillText("i",x,y);
+				else if(x==120 && y==360)
+				ctx.fillText("d",x,y);
+				else if(x==150 && y==360)
+				ctx.fillText("d",x,y);
+				else if(x==180 && y==360)
+				ctx.fillText("l",x,y);
+				else if(x==210 && y==360)
+				ctx.fillText("e",x,y);
+				else if(x==240 && y==360)
+				ctx.fillText("s",x,y);
+				else{
+				ctx.fillStyle = "rgba(0, 255, 0, 0.5)";
+				ctx.fillText(n,x,y);
+				}
+			}
+			if(hover==4){
+				ctx.fillStyle = "rgba(200, 255, 200, 1)";
+				if(x==210 && y==150)
+				ctx.fillText("A",x,y);
+				else if(x==240 && y==150)
+				ctx.fillText("t",x,y);
+				else if(x==270 && y==150)
+				ctx.fillText("t",x,y);
+				else if(x==300 && y==150)
+				ctx.fillText("r",x,y);
+				else if(x==330 && y==150)
+				ctx.fillText("a",x,y);
+				else if(x==360 && y==150)
+				ctx.fillText("c",x,y);
+				else if(x==390 && y==150)
+				ctx.fillText("t",x,y);
+				else if(x==420 && y==150)
+				ctx.fillText("o",x,y);
+				else if(x==450 && y==150)
+				ctx.fillText("r",x,y);
+				else{
+				ctx.fillStyle = "rgba(0, 255, 0, 0.5)";
+				ctx.fillText(n,x,y);
+				}
+			}
+			if(hover==5){
+				ctx.fillStyle = "rgba(200, 255, 200, 1)";
+				if(x==90 && y==210)
+				ctx.fillText("N",x,y);
+				else if(x==120 && y==210)
+				ctx.fillText("o",x,y);
+				else if(x==150 && y==210)
+				ctx.fillText("i",x,y);
+				else if(x==180 && y==210)
+				ctx.fillText("s",x,y);
+				else if(x==210 && y==210)
+				ctx.fillText("e",x,y);
+				else if(x==210 && y==300)
+				ctx.fillText("G",x,y);
+				else if(x==240 && y==300)
+				ctx.fillText("e",x,y);
+				else if(x==270 && y==300)
+				ctx.fillText("n",x,y);
+				else if(x==300 && y==300)
+				ctx.fillText("e",x,y);
+				else if(x==330 && y==300)
+				ctx.fillText("r",x,y);
+				else if(x==360 && y==300)
+				ctx.fillText("a",x,y);
+				else if(x==390 && y==300)
+				ctx.fillText("t",x,y);
+				else if(x==420 && y==300)
+				ctx.fillText("o",x,y);
+				else if(x==450 && y==300)
+				ctx.fillText("r",x,y);
+				else{
+				ctx.fillStyle = "rgba(0, 255, 0, 0.5)";
+				ctx.fillText(n,x,y);
+				}
+			}
+		}
+		x = 0;
+	}
+	y = 0;
+	}
+	function tab()
+		{
+			setTimeout(tab, 100);
+			randomTab();
+		}
+	
+	tab();
+	
+	</script>
+	
 </body>
 </html>
