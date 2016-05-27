@@ -201,6 +201,7 @@ body{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: clip;
+    opacity: 0.7;
 }
 
 .icon{
