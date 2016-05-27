@@ -152,6 +152,7 @@ li{
 
 body{
 	background-image: url("mountains-691082_1280.jpg");
+	background-repeat: no-repeat;
 }
 
 .submitButton{
