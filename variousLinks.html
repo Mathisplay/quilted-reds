@@ -28,6 +28,113 @@
 	<div id="footer">
 		Site made by Mateusz Kamiński.
 	</div>
+	
+	<script>
+	var c = document.getElementById("tablePos");
+	var ctx = c.getContext("2d");
+	var x = 0;
+	var y = 0;
+	var n;
+	var hover = 0;
+	ctx.fillStyle = "rgba(100, 255, 100, 1)";
+	ctx.font = "30px Lucida Console";
+	function randomTab(){
+	ctx.clearRect(0, 0, c.width, c.height);
+	while(y < 450){
+		n = Math.floor(Math.random() * 9);
+		y = y+30;
+		while(x < 500){
+			n = Math.floor(Math.random() * 9);
+			x = x+30;
+			if(hover==0){
+			ctx.fillStyle = "rgba(75, 140, 97, 0.5)";
+			ctx.fillText(n,x,y);
+			}
+			if(hover==1){
+				ctx.fillStyle = "rgba(100, 255, 100, 1)";
+				if(x==90 && y==120)
+				ctx.fillText("O",x,y);
+				else if(x==120 && y==120)
+				ctx.fillText("d",x,y);
+				else if(x==150 && y==120)
+				ctx.fillText("d",x,y);
+				else if(x==180 && y==120)
+				ctx.fillText("P",x,y);
+				else if(x==210 && y==120)
+				ctx.fillText("a",x,y);
+				else if(x==240 && y==120)
+				ctx.fillText("w",x,y);
+				else if(x==270 && y==120)
+				ctx.fillText("n",x,y);
+				else{
+				ctx.fillStyle = "rgba(75, 140, 97, 0.5)"
+				ctx.fillText(n,x,y);
+				}
+			}
+			if(hover==2){
+				ctx.fillStyle = "rgba(100, 255, 100, 1)";
+				if(x==60 && y==60)
+				ctx.fillText("N",x,y);
+				else if(x==90 && y==60)
+				ctx.fillText("o",x,y);
+				else if(x==90 && y==60)
+				ctx.fillText("o",x,y);
+				else if(x==90 && y==60)
+				ctx.fillText("o",x,y);
+				else if(x==90 && y==60)
+				ctx.fillText("o",x,y);
+				else{
+				ctx.fillStyle = "rgba(75, 140, 97, 0.5)"
+				ctx.fillText(n,x,y);
+				}
+			}
+			if(hover==3){
+				ctx.fillStyle = "rgba(100, 255, 100, 1)";
+				if(x==60 && y==60)
+				ctx.fillText("S",x,y);
+				else if(x==90 && y==60)
+				ctx.fillText("u",x,y);
+				else{
+				ctx.fillStyle = "rgba(75, 140, 97, 0.5)"
+				ctx.fillText(n,x,y);
+				}
+			}
+			if(hover==4){
+				ctx.fillStyle = "rgba(100, 255, 100, 1)";
+				if(x==60 && y==60)
+				ctx.fillText("S",x,y);
+				else if(x==90 && y==60)
+				ctx.fillText("i",x,y);
+				else{
+				ctx.fillStyle = "rgba(75, 140, 97, 0.5)";
+				ctx.fillText(n,x,y);
+				}
+			}
+			if(hover==5){
+				ctx.fillStyle = "rgba(100, 255, 100, 1)";
+				if(x==60 && y==60)
+				ctx.fillText("N",x,y);
+				else if(x==90 && y==60)
+				ctx.fillText("i",x,y);
+				else{
+				ctx.fillStyle = "rgba(75, 140, 97, 0.5)";
+				ctx.fillText(n,x,y);
+				}
+			}
+		}
+		x = 0;
+	}
+	y = 0;
+	}
+	function tab()
+		{
+			setTimeout(tab, 100);
+			randomTab();
+		}
+	
+	tab();
+	
+	</script>
 
 </body>
 </html>
