@@ -114,14 +114,13 @@
 			y = yn;
 		}
 	}
+	requestAnimationFrame(rysuj);
 	function rysuj()
 	{
 		dejong();
 		clifford();
-		setTimeout(rysuj, 200);
+		requestAnimationFrame(rysuj);
 	}
-	
-	rysuj();
 	
 </script>
 
