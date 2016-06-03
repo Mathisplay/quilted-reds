@@ -31,6 +31,11 @@
 
 	var c = document.getElementById("Canvas");
 	var ctx = c.getContext("2d");
+	
+	var imageObj = new Image();
+	imageObj.src = "mountains-691082_1280.jpg"
+	ctx.drawImage(imageObj,0,0);
+	
 	ctx.fillStyle = "rgba(255, 255, 255, 0.02)";
 	//ctx.fillStyle = "#FF106F";
 	//ctx.fillRect(10, 15, 100, 200);
