@@ -84,12 +84,20 @@
   			imgData.data[2]=255-imgData.data[2];
   			imgData.data[3]=255;
   			
+  			
+  			
 			ctx.putImageData(imgData, xn * skala + c.width/2, yn * skala + c.height/2);
 			//ctx.fillRect(xn * skala + 1224/2, yn * skala + 768/2 + 30, 1, 1);
 			
 			x = xn;
 			y = yn;
 		}
+		console.log(xn);
+		console.log(yn);
+		console.log(imgData.data[0]);
+		console.log(imgData.data[1]);
+		console.log(imgData.data[2]);
+		console.log(imgData.data[3]);
 	}
 	
 	function clifford()
