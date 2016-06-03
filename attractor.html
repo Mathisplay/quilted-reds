@@ -74,10 +74,16 @@
 		{
 			//var xn = y + 1 - a * x * x;
 			//var yn = b * x;
-			
 			var xn = Math.sin(a*y) - Math.cos(b*x);
 			var yn = Math.sin(c*x) - Math.cos(d*y);
+			console.log(xn);
+			console.log(yn);
 			var imgData=ctx.getImageData(xn * skala + c.width/2, yn * skala + c.height/2, 1, 1);
+			
+			console.log(imgData.data[0]);
+			console.log(imgData.data[1]);
+			console.log(imgData.data[2]);
+			console.log(imgData.data[3]);
 			
   			imgData.data[0]=255-imgData.data[0];
   			imgData.data[1]=255-imgData.data[1];
@@ -92,12 +98,8 @@
 			x = xn;
 			y = yn;
 			
-			console.log(xn);
-			console.log(yn);
-			console.log(imgData.data[0]);
-			console.log(imgData.data[1]);
-			console.log(imgData.data[2]);
-			console.log(imgData.data[3]);
+			
+			
 		}
 	}
 	
