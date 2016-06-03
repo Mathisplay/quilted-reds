@@ -72,6 +72,14 @@
 			
 			var xn = Math.sin(a*y) - Math.cos(b*x);
 			var yn = Math.sin(c*x) - Math.cos(d*y);
+			var imgData=ctx.getImageData(xn,yn,1,1);
+			
+  			imgData.data[0]=255-imgData.data[0];
+  			imgData.data[1]=255-imgData.data[1];
+  			imgData.data[2]=255-imgData.data[2];
+  			imgData.data[3]=255;
+  			}
+			ctx.putImageData(imgData,xn,yn);
 			ctx.fillRect(xn * skala + 1224/2, yn * skala + 768/2 + 30, 1, 1);
 			
 			x = xn;
@@ -85,6 +93,14 @@
 		{
 			var xn = Math.sin(a*y) - Math.cos(a*x);
 			var yn = Math.sin(b*x) - Math.cos(b*y);
+			var imgData=ctx.getImageData(xn,yn,1,1);
+			
+  			imgData.data[0]=255-imgData.data[0];
+  			imgData.data[1]=255-imgData.data[1];
+  			imgData.data[2]=255-imgData.data[2];
+  			imgData.data[3]=255;
+  			}
+			ctx.putImageData(imgData,xn,yn);
 			ctx.fillRect(xn * skala + 1224/2, yn * skala + 768/2 + 30, 1, 1);
 			
 			x = xn;
