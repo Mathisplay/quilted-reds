@@ -77,8 +77,6 @@
 			var xn = Math.sin(a*y) - Math.cos(b*x);
 			var yn = Math.sin(c*x) - Math.cos(d*y);
 			
-			console.log(xn);
-			console.log(yn);
 			var imgData=ctx.getImageData(xn * skala + 1224/2, yn * skala + 768/2, 1, 1);
 			
 			console.log(imgData.data[0]);
