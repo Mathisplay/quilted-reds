@@ -66,8 +66,6 @@
 	var x = 1;
 	var y = 1;
 	
-	requestAnimationFrame(rysuj);
-	
 	function dejong()
 	{
 		for(var i=0; i<2000; i++)
@@ -124,10 +122,12 @@
 	}
 	function rysuj()
 	{
-		requestAnimationFrame(rysuj);
 		dejong();
 		clifford();
+		setTimeout(rysuj, 200);
 	}
+	
+	rysuj();
 	
 </script>
 
