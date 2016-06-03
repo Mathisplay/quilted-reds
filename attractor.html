@@ -77,18 +77,13 @@
 			
 			var imgData=ctx.getImageData(xn * skala + 1224/2, yn * skala + 768/2, 1, 1);
 			
-			console.log(imgData.data[0]);
-			console.log(imgData.data[1]);
-			console.log(imgData.data[2]);
-			console.log(imgData.data[3]);
-			
   			imgData.data[0]=255-imgData.data[0];
   			imgData.data[1]=255-imgData.data[1];
   			imgData.data[2]=255-imgData.data[2];
   			imgData.data[3]=255;
   			
  
-  			ctx.fillStyle = "rgba(imgData.data[0], imgData.data[1], imgData.data[2], 1)";
+  			ctx.putImageData(imgData, xn * skala + 1224/2, yn * skala + 768/2);
 			//ctx.putImageData(imgData, xn * skala + 1224/2, yn * skala + 768/2);
 			//ctx.fillRect(xn * skala + 1224/2, yn * skala + 768/2 + 30, 1, 1);
 			
@@ -113,8 +108,7 @@
   			imgData.data[2]=255-imgData.data[2];
   			imgData.data[3]=255;
   			
-			ctx.fillStyle = "rgba(imgData.data[0], imgData.data[1], imgData.data[2], 1)";
-			ctx.fillRect(xn * skala + 1224/2, yn * skala + 768/2 + 30, 1, 1);
+			ctx.putImageData(imgData, xn * skala + 1224/2, yn * skala + 768/2);
 			
 			x = xn;
 			y = yn;
