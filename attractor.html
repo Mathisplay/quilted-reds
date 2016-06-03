@@ -78,10 +78,10 @@
 			var yn = Math.sin(c*x) - Math.cos(d*y);
 			console.log(xn);
 			console.log(yn);
-			var imgData=ctx.getImageData(xn * skala + c.width/2, yn * skala + c.height/2, 1, 1);
-			
 			console.log(c.width);
 			console.log(c.height);
+			var imgData=ctx.getImageData(xn * skala + c.width/2, yn * skala + c.height/2, 1, 1);
+			
 			console.log(imgData.data[0]);
 			console.log(imgData.data[1]);
 			console.log(imgData.data[2]);
