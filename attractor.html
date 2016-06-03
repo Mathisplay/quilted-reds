@@ -31,6 +31,7 @@
 
 	var c = document.getElementById("Canvas");
 	var ctx = c.getContext("2d");
+	ctx.fillStyle = "rgba(255, 255, 255, 0.02)";
 	//ctx.fillStyle = "#FF106F";
 	//ctx.fillRect(10, 15, 100, 200);
 	
@@ -71,19 +72,6 @@
 			
 			var xn = Math.sin(a*y) - Math.cos(b*x);
 			var yn = Math.sin(c*x) - Math.cos(d*y);
-			
-			if(i%6 == 0)
-				ctx.fillStyle = "rgba(255, 0, 0, 0.1)";
-			if(i%6 == 1)
-				ctx.fillStyle = "rgba(0, 255, 0, 0.1)";
-			if(i%6 == 2)
-				ctx.fillStyle = "rgba(0, 0, 255, 0.1)";
-			if(i%6 == 3)
-				ctx.fillStyle = "rgba(255, 0, 255, 0.1)";
-			if(i%6 == 4)
-				ctx.fillStyle = "rgba(255, 255, 0, 0.1)";
-			if(i%6 == 5)
-				ctx.fillStyle = "rgba(0, 255, 255, 0.1)";
 			ctx.fillRect(xn * skala + 1224/2, yn * skala + 768/2 + 30, 1, 1);
 			
 			x = xn;
@@ -97,19 +85,6 @@
 		{
 			var xn = Math.sin(a*y) - Math.cos(a*x);
 			var yn = Math.sin(b*x) - Math.cos(b*y);
-			
-			if(i%6 == 0)
-				ctx.fillStyle = "rgba(255, 0, 0, 0.1)";
-			if(i%6 == 1)
-				ctx.fillStyle = "rgba(0, 255, 0, 0.1)";
-			if(i%6 == 2)
-				ctx.fillStyle = "rgba(0, 0, 255, 0.1)";
-			if(i%6 == 3)
-				ctx.fillStyle = "rgba(255, 0, 255, 0.1)";
-			if(i%6 == 4)
-				ctx.fillStyle = "rgba(255, 255, 0, 0.1)";
-			if(i%6 == 5)
-				ctx.fillStyle = "rgba(0, 255, 255, 0.1)";
 			ctx.fillRect(xn * skala + 1224/2, yn * skala + 768/2 + 30, 1, 1);
 			
 			x = xn;
