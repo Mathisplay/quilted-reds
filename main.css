@@ -182,7 +182,8 @@ body{
  filter: dropshadow(color=#ccfc46, offx=0, offy=0);  -webkit-transition: outline 1s ease-in-out;
  -moz-transition:  outline 1s ease-in-out;
  -o-transition:  outline 1s ease-in-out;
- transition:  outline 1s ease-in-out;}.button:hover{
+ transition:  outline 1s ease-in-out;}
+ .button:hover{
  padding:4px 6px; 
  border:none; 
  -webkit-border-radius:4px;
@@ -203,7 +204,8 @@ body{
  box-shadow:0px 0px 10px #bababa, inset 0px 0px 11px #efffed;  
   
  text-shadow: 0px 0px 20px #ccfc46; 
- filter: dropshadow(color=#ccfc46, offx=0, offy=0);}.button:active{
+ filter: dropshadow(color=#ccfc46, offx=0, offy=0);}
+ .button:active{
  padding:4px 6px; 
  border:none; 
  -webkit-border-radius:4px;
@@ -250,7 +252,8 @@ body{
  filter: dropshadow(color=#ccfc46, offx=0, offy=0);  -webkit-transition: outline 1s ease-in-out;
  -moz-transition:  outline 1s ease-in-out;
  -o-transition:  outline 1s ease-in-out;
- transition:  outline 1s ease-in-out;}.button:hover{
+ transition:  outline 1s ease-in-out;}
+ .button:hover{
  padding:4px 6px; 
  border:none; 
  -webkit-border-radius:4px;
@@ -271,7 +274,8 @@ body{
  box-shadow:0px 0px 10px #bababa, inset 0px 0px 11px #efffed;  
   
  text-shadow: 0px 0px 20px #ccfc46; 
- filter: dropshadow(color=#ccfc46, offx=0, offy=0);}.button:active{
+ filter: dropshadow(color=#ccfc46, offx=0, offy=0);}
+ .button:active{
  padding:4px 6px; 
  border:none; 
  -webkit-border-radius:4px;
