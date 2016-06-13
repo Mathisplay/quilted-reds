@@ -2,21 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Julius</title>
+    <title>Ciphers</title>
     <link href="main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<div id="menu">
 		<ul>
 			<img src="quiltedRedsGif3.gif" id="logo">
-			<li><button class="menuButton" onclick="window.location.href='home.html'">Home</button></li>
 			<div id="content">
 			Ciphers
-			</div>	
+			</div>
+			
 		</ul>
 	</div>
 	
-	<div id="content3">
+	<ul>
+		<li id="content2" style="top:60px;"><button class="menuButton2" onclick="smoothScroll(document.getElementById('second'))">Transposition ciphers</button></li>
+		<li id="content2" style="top:120px;"><button class="menuButton2" onclick="smoothScroll(document.getElementById('second'))">Substitution ciphers</button></li>
+		<li id="content2" style="top:180px;"><button class="menuButton2" onclick="smoothScroll(document.getElementById('second'))">Symmetric-key cryptography</button></li>
+	</ul>
 <ul id="menu_wrap" class="Blue">
 <li class="button"><a href="#">Transposition ciphers</a></li>
 <li class="button"><a href="#">Substitution ciphers</a></li>
@@ -27,5 +31,30 @@
 	<div id="footer">
 		Site made by Mateusz Kamiński.
 	</div>
+
+<script>
+window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+    
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+    
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+</script>
 </body>
 </html>
