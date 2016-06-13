@@ -21,6 +21,9 @@
 		<li id="content2" style="top:60px; position: fixed;"><button class="menuButton2" onclick="smoothScroll(document.getElementById('first'))">Transposition</button></li>
 		<li id="content2" style="top:120px; position: fixed;"><button class="menuButton2" onclick="smoothScroll(document.getElementById('second'))">Substitution</button></li>
 		<li id="content2" style="top:180px; position: fixed;"><button class="menuButton2" onclick="smoothScroll(document.getElementById('third'))">Symmetric-key</button></li>
+		<li id="content2" style="top:240px; position: fixed;"><button class="menuButton2" onclick="smoothScroll(document.getElementById('fourth'))">Stream</button></li>
+		<li id="content2" style="top:300px; position: fixed;"><button class="menuButton2" onclick="smoothScroll(document.getElementById('fifth'))">CSPRNG</button></li>
+		<li id="content2" style="top:360px; position: fixed;"><button class="menuButton2" onclick="smoothScroll(document.getElementById('sixth'))">Steganography</button></li>
 	</ul>
 	
 	<div id="box">
@@ -35,6 +38,25 @@
 		<div id="third">
 			Symmetric-key cryptography<br><br>
 			Symmetric-key algorithms are algorithms for cryptography that use the same cryptographic keys for both encryption of plaintext and decryption of ciphertext. The keys may be identical or there may be a simple transformation to go between the two keys. The keys, in practice, represent a shared secret between two or more parties that can be used to maintain a private information link. This requirement that both parties have access to the secret key is one of the main drawbacks of symmetric key encryption, in comparison to public-key encryption (also known as asymmetric key encryption).
+		</div>
+		<div id="fourth">
+			Stream cipher<br><br>
+			A stream cipher is a symmetric key cipher where plaintext digits are combined with a pseudorandom cipher digit stream (keystream). In a stream cipher each plaintext digit is encrypted one at a time with the corresponding digit of the keystream, to give a digit of the ciphertext stream. Since encryption of each digit is dependent on the current state of the cipher, it is also known as state cipher. In practice, a digit is typically a bit and the combining operation an exclusive-or.
+		</div>
+		<div id="fifth">
+			CSPRNG<br><br>
+			A cryptographically secure pseudo-random number generator (CSPRNG) or cryptographic pseudo-random number generator (CPRNG)[1] is a pseudo-random number generator (PRNG) with properties that make it suitable for use in cryptography.
+
+			Many aspects of cryptography require random numbers, for example:
+    			- key generation
+    			- nonces
+    			- one-time pads
+    			- salts in certain signature schemes, including ECDSA, RSASSA-PSS
+    			The "quality" of the randomness required for these applications varies. For example, creating a nonce in some protocols needs only uniqueness. On the other hand, generation of a master key requires a higher quality, such as more entropy. And in the case of one-time pads, the information-theoretic guarantee of perfect secrecy only holds if the key material comes from a true random source with high entropy.
+			</div>
+		<div id="sixth">
+			Steganography<br><br>
+			Steganography is the practice of concealing a file, message, image, or video within another file, message, image, or video. The word steganography combines the Greek words steganos (στεγανός), meaning "covered, concealed, or protected", and graphein (γράφειν) meaning "writing". The first recorded use of the term was in 1499 by Johannes Trithemius in his Steganographia, a treatise on cryptography and steganography, disguised as a book on magic. Generally, the hidden messages appear to be (or be part of) something else: images, articles, shopping lists, or some other cover text. For example, the hidden message may be in invisible ink between the visible lines of a private letter. Some implementations of steganography that lack a shared secret are forms of security through obscurity, whereas key-dependent steganographic schemes adhere to Kerckhoffs's principle.
 		</div>
 		<div id="end">
 			<br><br>
