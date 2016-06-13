@@ -243,7 +243,7 @@ body{
  -moz-transition:  outline 1s ease-in-out;
  -o-transition:  outline 1s ease-in-out;
  transition:  outline 1s ease-in-out;}
- .button:hover{
+ .submitButton:hover{
  padding:4px 6px; 
  border:none; 
  -webkit-border-radius:4px;
@@ -265,7 +265,7 @@ body{
   
  text-shadow: 0px 0px 20px #ccfc46; 
  filter: dropshadow(color=#ccfc46, offx=0, offy=0);}
- .button:active{
+ .submitButton:active{
  padding:4px 6px; 
  border:none; 
  -webkit-border-radius:4px;
@@ -314,7 +314,7 @@ body{
  -moz-transition:  outline 1s ease-in-out;
  -o-transition:  outline 1s ease-in-out;
  transition:  outline 1s ease-in-out;}
- .button:hover{
+ .submitButton2:hover{
  padding:4px 6px; 
  border:none; 
  -webkit-border-radius:4px;
@@ -336,7 +336,7 @@ body{
   
  text-shadow: 0px 0px 20px #ccfc46; 
  filter: dropshadow(color=#ccfc46, offx=0, offy=0);}
- .button:active{
+ .submitButton2:active{
  padding:4px 6px; 
  border:none; 
  -webkit-border-radius:4px;
@@ -406,7 +406,7 @@ overflow: hidden;
 padding: 10px;
 text-overflow: clip;
 }
-.button:hover{
+.menuButton2:hover{
 border:none; 
 -webkit-border-radius:4px;
 -moz-border-radius:4px; 
@@ -437,7 +437,7 @@ overflow: hidden;
 padding: 10px;
 text-overflow: clip;
 }
-.button:active{
+.menuButton2:active{
 border:none; 
 -webkit-border-radius:4px;
 -moz-border-radius:4px; 
