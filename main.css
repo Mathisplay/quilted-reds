@@ -419,7 +419,7 @@ text-overflow: clip;
 
 #first{
 	position: absolute;
-	top: 40px;
+	top: 50px;
 	text-align: center;
 	left: 50%;
 	width: 50%;
@@ -427,6 +427,7 @@ text-overflow: clip;
 	font-size: 20px;
 	word-wrap: break-word;
 	padding-top: 30px;
+	color: #ffffff;
 }
 
 #second{
@@ -439,6 +440,7 @@ text-overflow: clip;
 	font-size: 20px;
 	word-wrap: break-word;
 	padding-top: 30px;
+	color: #ffffff;
 }
 
 #third{
@@ -451,4 +453,5 @@ text-overflow: clip;
 	font-size: 20px;
 	word-wrap: break-word;
 	padding-top: 30px;
+	color: #ffffff;
 }
