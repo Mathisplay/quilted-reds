@@ -427,7 +427,7 @@ text-overflow: clip;
 	font-size: 20px;
 	word-wrap: break-word;
 	padding-top: 30px;
-	color: #ffffff;
+	color: white;
 }
 
 #second{
@@ -440,7 +440,7 @@ text-overflow: clip;
 	font-size: 20px;
 	word-wrap: break-word;
 	padding-top: 30px;
-	color: #ffffff;
+	color: white;
 }
 
 #third{
@@ -453,5 +453,5 @@ text-overflow: clip;
 	font-size: 20px;
 	word-wrap: break-word;
 	padding-top: 30px;
-	color: #ffffff;
+	color: white;
 }
