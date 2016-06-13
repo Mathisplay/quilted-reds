@@ -24,7 +24,7 @@
 	<li id="content2" style="top:180px;"><button onmouseenter="hover=3" onmouseleave="hover=0" class="menuButton2" onclick="window.location.href='variousLinks.html'">Links to Other Riddles</button></li>
 	<li id="content2" style="top:240px;"><button onmouseenter="hover=4" onmouseleave="hover=0" class="menuButton2" onclick="window.location.href='attractor.html'">Attractor</button></li>
 	<li id="content2" style="top:300px;"><button onmouseenter="hover=5" onmouseleave="hover=0" class="menuButton2" onclick="window.location.href='noise.html'">Noise Generator</button></li>
-	<li id="content2" style="top:360px;"><button onmouseenter="hover=0" onmouseleave="hover=0" class="menuButton2" onclick="window.location.href='ciphers.html'">Ciphers</button></li>
+	<li id="content2" style="top:360px;"><button onmouseenter="hover=6" onmouseleave="hover=0" class="menuButton2" onclick="window.location.href='ciphers.html'">Ciphers</button></li>
 	</ul>
 	<canvas id="tablePos" width="500" height="500"></canvas>
 	</div>
@@ -44,6 +44,7 @@
 	function randomTab(){
 	ctx.clearRect(0, 0, c.width, c.height);
 	while(y < 450){
+		console.log(hover);
 		n = Math.floor(Math.random() * 9);
 		y = y+30;
 		while(x < 500){
@@ -227,7 +228,27 @@
 				ctx.fillStyle = "rgba(75, 140, 97, 0.5)";
 				ctx.fillText(n,x,y);
 				}
-			
+			if(hover==6){
+				ctx.fillStyle = "rgba(100, 255, 100, 1)";
+				if(x==180 && y==240)
+				ctx.fillText("C",x,y);
+				else if(x==210 && y==240)
+				ctx.fillText("i",x,y);
+				else if(x==240 && y==240)
+				ctx.fillText("p",x,y);
+				else if(x==270 && y==240)
+				ctx.fillText("h",x,y);
+				else if(x==300 && y==240)
+				ctx.fillText("e",x,y);
+				else if(x==330 && y==240)
+				ctx.fillText("r",x,y);
+				else if(x==360 && y==240)
+				ctx.fillText("s",x,y);
+				else{
+				ctx.fillStyle = "rgba(75, 140, 97, 0.5)";
+				ctx.fillText(n,x,y);
+				}
+			}
 		}
 		x = 0;
 	}
