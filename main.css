@@ -174,8 +174,7 @@ body{
 }
 
 #second{
-	position: absolute;
-	top: 40px;
+	position: relative;
 	text-align: center;
 	left: 45%;
 	width: 50%;
@@ -187,8 +186,7 @@ body{
 }
 
 #third{
-	position: absolute;
-	top: 40px;
+	position: relative;
 	text-align: center;
 	left: 45%;
 	width: 50%;
