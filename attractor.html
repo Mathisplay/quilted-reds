@@ -61,7 +61,7 @@
 	
 	var skala = 160;
 	
-	//var timer = setInterval(dejong, 10);
+	//var timer = setInterval(dejong, 50);
 	
 	var x = 1;
 	var y = 1;
@@ -114,14 +114,13 @@
 			y = yn;
 		}
 	}
-	requestAnimationFrame(rysuj);
 	function rysuj()
 	{
 		dejong();
 		clifford();
-		requestAnimationFrame(rysuj);
+		setInterval(dejong, 50);
 	}
-	
+	rysuj();
 </script>
 
 	<div id="bottomBar">
